@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% for theatres in theatre %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{theatres.Movie_name}}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/chennaiheader.html' %}
+<div class="theatre">
+  <div class="theatre-h">
+    <h1>{{theatres.Movie_name}}</h1>
+  </div>
+  <div class="theatre-c">
+    <div class="theatre-d">
+      <h2>AGS Cinema OMR- Navalur</h2>
+      <p>Food and Bevarages available</p>
+      <p>cancellation available and no refund</p>
+    </div>
+    
+    <div class="time">
+      <button class="bt1"><a href="/theatre/chennai/ags">10.00 AM</a></button>
+      <button class="bt2"><a href="/theatre/chennai/ags">2.00 PM</a></button>
+      <button class="bt3"><a href="/theatre/chennai/ags">6.00 PM</a></button>
+      <button class="bt4"><a href="/theatre/chennai/ags">10.00 PM</a></button>
+    </div>
+  </div>
+  <div class="theatre-c">
+    <div class="theatre-d">
+      <h2>Anna Cinemas-Mount Road</h2>
+      <p>Food and Bevarages available</p>
+      <p>cancellation available and refundable</p>
+    </div>
+    
+    <div class="time">
+      <button class="bt1"><a href="/theatre/chennai/anna">10.00 AM</a></button>
+      <button class="bt2"><a href="/theatre/chennai/anna">2.00 PM</a></button>
+      <button class="bt3"><a href="/theatre/chennai/anna">6.00 PM</a></button>
+      <button class="bt4"><a href="/theatre/chennai/anna">10.00 PM</a></button>
+    </div>
+  </div>
+  <div class="theatre-c">
+    <div class="theatre-d">
+      <h2>AGS Cinemas-T.Nagar</h2>
+      <p>Food available</p>
+      <p>No Cancellation</p>
+    </div>
+    
+    <div class="time">
+      <button class="bt1"><a href="/theatre/chennai/tnagar">10.00 AM</a></button>
+      <button class="bt2"><a href="/theatre/chennai/tnagar">2.00 PM</a></button>
+      <button class="bt3"><a href="/theatre/chennai/tnagar">6.00 PM</a></button>
+      <button class="bt4"><a href="/theatre/chennai/tnagar">10.00 PM</a></button>
+    </div>
+  </div>
+  <div class="theatre-c">
+    <div class="theatre-d">
+      <h2>Anandh Theatre-Vandalur</h2>
+      <p>Food available</p>
+      <p>No Cancellation</p>
+    </div>
+    
+    <div class="time">
+      <button class="bt1"><a href="/theatre/chennai/nandh">10.00 AM</a></button>
+      <button class="bt2"><a href="/theatre/chennai/nandh">2.00 PM</a></button>
+      <button class="bt3"><a href="/theatre/chennai/nandh">6.00 PM</a></button>
+      <button class="bt4"><a href="/theatre/chennai/nandh">10.00 PM</a></button>
+    </div>
+  </div>
+  
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+{%  endfor  %}
+</html>

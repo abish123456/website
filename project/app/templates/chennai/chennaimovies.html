@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/chennaiheader.html' %}
+
+<div class="main">
+  <div class="container1">
+    <div class="row1">
+      <h1 class="movies">TAMIL MOVIES</h1>
+    </div>
+    <div class="contents1">
+      {% for movie in Movies   %}
+    <div class="content1">
+      <a href=""><img src="{{movie.image.url}}" alt=""></a>
+      <a href="">{{movie.movie_name}}</a> 
+    </div>
+       {%  endfor %}
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">OTHER LANGUAGE MOVIES</h1>
+    </div>
+    <div class="contents1">
+      {% for other in Other   %}
+    <div class="content1">
+      <a href=""><img src="{{other.image.url}}" alt=""></a>
+      <a href="">{{other.movie_name}}</a> 
+    </div>
+       {% endfor  %}
+   </div>
+   <div class="container1">
+    
+    <div class="contents1">
+      {% for other1 in Other1   %}
+      <div class="content1">
+        <a href=""><img src="{{other1.image.url}}" alt=""></a>
+        <a href="">{{other1.movie_name}}</a> 
+      </div>
+     {% endfor  %}
+  </div>
+   
+  <div class="container1">
+    <div class="row1">
+      <h1 class="movies">CARTOON MOVIES</h1>
+    </div>
+    <div class="contents1">
+      {%  for cartoon in Cartoon %}
+    <div class="content1">
+      <a href=""><img src="{{cartoon.image.url}}" alt=""></a>
+      <a href="">{{cartoon.movie_name}}</a> 
+    </div>
+      {% endfor %}
+      
+   </div>
+  </div>
+</div>
+{% include 'inc/footer.html' %}
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

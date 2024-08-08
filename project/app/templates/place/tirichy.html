@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+<body>
+  <header>
+    {%  include 'inc/trichyheader.html' %}
+<div class="sl">
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" class="ding" id="radio1" name="radios">
+      <input type="radio" class="ding" id="radio2" name="radios">
+      <input type="radio" class="ding" id="radio3" name="radios">
+      <input type="radio" class="ding" id="radio4" name="radios">
+      <input type="radio" class="ding" id="radio5" name="radios">
+      <div class="slide first">
+        <img src="{% static 'images/anime/spi.jpg'  %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'images/hindi/jaiho.jpg'  %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'images/streaming/lok.jpg'  %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'images/english/fla.jpg'  %}" alt="">
+      </div>
+      <div class="slide">
+        <img src="{% static 'images/Tamil/winner.jpeg'  %}" alt="">
+      </div>
+      <div class="auto" id="autos">
+        <div class="auto1"></div>
+        <div class="auto2"></div>
+        <div class="auto3"></div>
+        <div class="auto4"></div>
+        <div class="auto5"></div>
+      </div>
+    </div>
+    <div class="manual" id="man">
+      <label for="radio1" class="manuals"></label>
+      <label for="radio2" class="manuals"></label>
+      <label for="radio3" class="manuals"></label>
+      <label for="radio4" class="manuals"></label>
+      <label for="radio5" class="manuals"></label>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="container1">
+    <div class="row1">
+      <h1 class="movies">TRENDING MOVIES</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/Tamil/varisu.jpg' %}" alt=""></a>
+      <a href="">VARISU</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/kanada/liger.jpg' %}" alt=""></a>
+      <a href="">LIGER</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/hindi/jai.jpg' %}" alt=""></a>
+      <a href="">JAI HO</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/english/flash.jpg' %}" alt=""></a>
+      <a href="">FLASH</a>
+    </div>
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">STREAMING</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/streaming/wha.jpg' %}" alt=""></a>
+      <a href="">WHAT-IF?</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/streaming/secretinvasion.jpg' %}" alt=""></a>
+      <a href="">SECRET INVASION</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/streaming/loki.jpg' %}" alt=""></a>
+      <a href="">LOKI</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/streaming/dead.jpg' %}" alt=""></a>
+      <a href="">DEAD BY DAYLIGHT</a>
+    </div>
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">LIVE CONCERTS</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/concerts/maayanadhi.jpg' %}" alt=""></a>
+      <a href="">MAAYANADHI</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/concerts/vikkals.jpg' %}" alt=""></a>
+      <a href="">VIKKALS OF VIKRAM</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/concerts/yuvan.jpg' %}" alt=""></a>
+      <a href="">U1 DRUGS</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/concerts/kuttie.jpg' %}" alt=""></a>
+      <a href="">KUTTY STORY</a>
+    </div>
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">SPORTS</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/sports/mar.jpg' %}" alt=""></a>
+      <a href="">MARATHON</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/sports/soc.jpg' %}" alt=""></a>
+      <a href="">SOCCER</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/sports/ten.jpg' %}" alt=""></a>
+      <a href="">TENNIS</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/sports/cric.jpg' %}" alt=""></a>
+      <a href="">CRICKET</a>
+    </div>
+   </div>
+  </div>
+</div>
+{% include 'inc/footer.html' %}
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

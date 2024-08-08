@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/maduraiheader.html' %}
+<div class="padam">
+  <div class="padams">
+    <img src="{%static 'images/Tamil/mann.jpg' %}" alt="">
+  </div>
+  <div class="description">
+    <h1>MAANAADU</h1>
+    <h2>2D Only</h2>
+    <h2>TAMIL </h2>
+    <h2>Drama/Political/Action/Thriller</h2>
+    <button type="submit">Book Tickets</button>
+  </div>
+  <div class="story">
+    <h2>About Movie</h2>
+    <p> In Maanaadu, a supremely entertaining high-concept movie, Venkat Prabhu superbly Indianises the time loop concept and delivers an edge-of-the-seat masala movie. After the set-up, the film moves at a breakneck pace, hardly letting go of either momentum and drama.</p>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Cast</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/str.jpg' %}" alt="">
+        <h3>Silambarasan</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/kalyani.jpg' %}" alt="">
+        <h3>Kalyani Priyadharshini</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/sj.jpg' %}" alt="">
+        <h3>S J Surya</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/sa.jpg' %}" alt="">
+        <h3>S A Chandhrasekhar</h3>
+      </div>
+    </div>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Crew</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/venkat.jpg' %}" alt="">
+        <h3>Venkat Prabhu</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/ghibran.jpg' %}" alt="">
+        <h3>Ghibran</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/suresh.jpg' %}" alt="">
+        <h3>Suresh Kamakhshi</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/om.jpg' %}" alt="">
+        <h3>Om Prakash</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

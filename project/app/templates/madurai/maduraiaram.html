@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/maduraiheader.html' %}
+<div class="padam">
+  <div class="padams">
+    <img src="{%static 'images/Tamil/arram.jpg' %}" alt="">
+  </div>
+  <div class="description">
+    <h1>ARAMM</h1>
+    <h2>2D Only</h2>
+    <h2>TAMIL </h2>
+    <h2>Drama/Political</h2>
+    <button type="submit">Book Tickets</button>
+  </div>
+  <div class="story">
+    <h2>About Movie</h2>
+    <p>A little girl falls into a deep borewell, and her rescue becomes a huge professional and personal <br> challenge for a collector.</p>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Cast</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/nayan.jpg' %}" alt="">
+        <h3>Nayanthara</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/sunnu.jpg' %}" alt="">
+        <h3>Sunu Lakshmi</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/ramesh.jpg' %}" alt="">
+        <h3>Ramesh Thilagananthan</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/durai.jpg' %}" alt="">
+        <h3>Ramachandhran Durairaj</h3>
+      </div>
+    </div>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Crew</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/gopi.jpg' %}" alt="">
+        <h3>Gopinainar</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/ghibran.jpg' %}" alt="">
+        <h3>Ghibran</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/udhaya.jpg' %}" alt="">
+        <h3>Udhayanidhi Stalin</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/om.jpg' %}" alt="">
+        <h3>Om Prakash</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

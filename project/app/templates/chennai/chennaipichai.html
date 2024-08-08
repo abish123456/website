@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  <header>
+    <div class="header">
+        <div class="nav">
+          
+          <a href="/" style="text-decoration: none;"><h1 class="heading">REGBI </h1></a>
+          <div class="sear">
+            <input type="text" class="search" placeholder=" Search movies, concerts, streaming here" >
+            <button class="search-btn" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+              <button id="sign">SIGN IN</button>
+            <button id="place" onclick="show()" >CHENNAI</button>
+              
+              <button id="opens"><i class="fa-solid fa-bars" id="open"></i></button>
+            </div>
+          </div>
+        </div>
+       </div>
+   
+    <div class="menu">
+      <a href="/chennaimovies" class="menubar" style=" color:rgb(226, 44, 44); font-size:x-large " > MOVIES</a>
+      <a href="/chennaievents" class="menubar">CONCERTS</a>
+      <a href="/chennaistreaming" class="menubar">STREAMING</a>
+      <a href="/chennaisports" class="menubar">SPORTS</a>
+      <a href="" class="menubar">HELP & SUPPORT</a>
+    </div>
+  <div id="loggy">
+    <div id="log">
+      <img src="{% static 'images/Tamil/wall.jpg' %}" alt="" class="img">
+      <div class="loginpage">
+        <button id="ab"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+        <h3>SIGN IN</h3>
+        <div class="logins">
+          <input type="text" placeholder="Username" class="login">
+        </div>
+        <div class="logins">
+          <input type="text" placeholder="Password" class="login">
+        </div>
+        <div class="logins">
+          <a href="" class="sub">Login</a>
+        </div>
+        <div class="logins">
+          <h4>Or</h4>
+        </div>
+        <div class="logins">
+          <button type="submit" class="subs">Create a New Account</button>
+        </div>
+        <div class="logins">
+          <h4>Or</h4>
+        </div>
+        <div class="logins">
+          <button type="submit" class="subss"><i class="fa-brands fa-google"></i>         Login with Google</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+  </header>
+
+<div id="hide">
+  
+  <div class="menus">
+    <div class="into"><a href="" class="into-btn" id="into-button"> <i class="fa-sharp fa-solid fa-xmark"></i></a></div>
+    <div class="mini">
+      <h2>MENU</h2>
+      <div class="max">
+        <ul>
+          <li><a href=""><i class="fa-solid fa-user"></i>  ACCOUNT</a></li>
+          <li><a href=""><i class="fa-solid fa-ticket"></i> BOOKINGS</a></li>
+          <li><a href=""><i class="fa-solid fa-cart-shopping"></i> ORDERS</a></li>
+          <li><a href=""> <i class="fa-solid fa-headset"></i>   HELP & SUPPORT </a></li>
+        </ul>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<div class="place" id="location">
+  <div class="places">
+    <div class="int">
+      <a href="" class="into-btn" id="into-button"> <i class="fa-sharp fa-solid fa-xmark"></i></a>
+      <h1 class="placer">SELECT YOUR LOCATION </h1></div>
+    <div class="placess">
+      <div class="place1">
+        <a href="/"><img src="{%static 'images/place/chennai.jpg' %}" alt=""></a>
+        <a href="/">CHENNAI</a>
+      </div>
+      <div class="place1">
+        <a href="/madurai"><img src="{%static 'images/place/madurai.jpg' %}" alt=""></a>
+        <a href="/madurai">MADURAI</a>
+      </div>
+      <div class="place1">
+        <a href="/kanyakumari"><img src="{%static 'images/place/kanyakumari.png' %}" alt=""></a>
+        <a href="/kanyakumari">KANYA KUMARI</a>
+      </div>
+      <div class="place1">
+        <a href="/thanjavur"><img src="{%static 'images/place/tan.jpg' %}" alt=""></a>
+        <a href="/thanjavur">THANJAVUR</a>
+      </div>
+      <div class="place1">
+        <a href="/coimbatore"><img src="{%static 'images/place/coimbatore.jpg' %}" alt=""></a>
+        <a href="/coimbatore">COIMBATORE</a>
+      </div>
+      <div class="place1">
+        <a href="/tirichy"><img src="{%static 'images/place/trichy.jpg' %}" alt=""></a>
+        <a href="/tirichy">TIRICHY</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="padam">
+  <div class="padams">
+    <img src="{%static 'images/Tamil/pich.jpg' %}" alt="">
+  </div>
+  <div class="description">
+    <h1>PICHAIKARAN-2</h1>
+    <h2>2D Only</h2>
+    <h2>TAMIL </h2>
+    <h2>Action/Drama/Sci-Fi</h2>
+    <a href="/chennaipichaitheatre"><button > Book Tickets</button></a>
+  </div>
+  <div class="story">
+    <h2>About Movie</h2>
+    <p>In pursuit of his lost sister, an impoverished Sathya is embroiled in a situation that forces him to <br> impersonate a dead multi-millionaire.</p>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Cast</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/vijayanthony.jpg' %}" alt="">
+        <h3>Vijay Antony</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/kavya.jpg' %}" alt="">
+        <h3>Kavya Thappar</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/peradi.jpg' %}" alt="">
+        <h3>Hareesh Peradi</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/sheela.jpg' %}" alt="">
+        <h3>Sheela Rajkumar</h3>
+      </div>
+    </div>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Crew</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/vijayanthony.jpg' %}" alt="">
+        <h3>Vijay Antony</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/rithika.jpg' %}" alt="">
+        <h3>Rithika Singh</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/priya.jpg' %}" alt="">
+        <h3>Priya Krishnasamy</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/leo.jpg' %}" alt="">
+        <h3>Leo John Paul</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

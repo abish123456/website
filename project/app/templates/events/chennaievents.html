@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+ {% include 'inc/chennaiheader.html' %}
+
+<div class="main">
+  <div class="container1">
+    <div class="row1">
+      <h1 class="movies">EVENTS IN TAMIL NADU</h1>
+    </div>
+    <div class="contents1">
+      {%  for event1 in event1 %}
+    <div class="content1">
+      <a href=""><img src="{{event1.image.url}}" alt=""></a>
+      <a href="">{{event1.event_name}}</a> 
+    </div>
+      {% endfor %}
+   </div>
+   <div class="container1">
+    <div class="row1">
+        <h1 class="movies">EVENTS OUTSIDE TAMIL NADU</h1>
+      </div>
+    <div class="contents1">
+      {%  for event2 in event2 %}
+    <div class="content1">
+      <a href=""><img src="{{event2.image.url}}" alt=""></a>
+      <a href="">{{event2.event_name}}</a> 
+    </div>
+    {% endfor %}
+   </div>
+   <div class="container1">
+    
+    <div class="contents1">
+      {%  for event3 in event3 %}
+    <div class="content1">
+      <a href=""><img src="{{event3.image.url}}" alt=""></a>
+      <a href="">{{event3.event_name}}</a> 
+    </div>
+      {% endfor %}
+   </div>
+   <div class="container1">
+    
+    <div class="contents1">
+      {%  for event4 in event4 %}
+    <div class="content1">
+      <a href=""><img src="{{event4.image.url}}" alt=""></a>
+      <a href="">{{event4.event_name}}</a> 
+    </div>
+    {% endfor %}
+   </div>
+  </div>
+</div>
+{% include 'inc/footer.html' %}
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

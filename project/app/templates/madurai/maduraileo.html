@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/maduraiheader.html' %}
+<div class="padam">
+  <div class="padams">
+    <img src="{%static 'images/Tamil/leos.jpg' %}" alt="">
+  </div>
+  <div class="description">
+    <h1>LEO</h1>
+    <h2>2D Only</h2>
+    <h2>TAMIL | HINDI | MALAYALAM | TELUNGU | KANADA </h2>
+    <h2>Action/Thriller/Crime/Drama</h2>
+    <button type="submit">Book Tickets</button>
+  </div>
+  <div class="story">
+    <h2>About Movie</h2>
+    <p>A special agent investigates a murder committed by a masked group of serial killers. However, a tangled maze of clues <br> soon leads him to the drug kingpin of Kashmir</p>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Cast</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/vijay.jpg' %}" alt="">
+        <h3>Joseph Vijay</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/trisha.jpg' %}" alt="">
+        <h3>Trisha</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/dutt.jpg' %}" alt="">
+        <h3>Sanjay Dutt</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/gvm.jpg' %}" alt="">
+        <h3>Gautham Vasudev Menon</h3>
+      </div>
+    </div>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Crew</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/lokesh.jpg' %}" alt="">
+        <h3>Lokesh Kanagaraj</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/ani.jpg' %}" alt="">
+        <h3>Anirudh Ravichander</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/manoj.jpg' %}" alt="">
+        <h3>Manoj Paramahamsa</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/raj.jpg' %}" alt="">
+        <h3>Philomin Raj</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

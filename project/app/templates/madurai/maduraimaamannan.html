@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/maduraiheader.html' %}
+<div class="padam">
+  <div class="padams">
+    <img src="{%static 'images/Tamil/maamannan.jpg' %}" alt="">
+  </div>
+  <div class="description">
+    <h1>MAAMANNAN</h1>
+    <h2>2D Only</h2>
+    <h2>TAMIL </h2>
+    <h2>Drama/Political/Thriller</h2>
+    <button type="submit">Book Tickets</button>
+  </div>
+  <div class="story">
+    <h2>About Movie</h2>
+    <p>A community is exploited by the town`s influential man, who has the powerful backing of the <br> authorities. A man collects evidence to flip him</p>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Cast</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/udhaya.jpg' %}" alt="">
+        <h3>Udhayanidhi Stalin</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/vadivelu.jpg' %}" alt="">
+        <h3>Vadivelu</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/keerthi.jpg' %}" alt="">
+        <h3>Keerthi Suresh</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/fahad.jpg' %}" alt="">
+        <h3>Fahad Faasil</h3>
+      </div>
+    </div>
+  </div>
+  <div class="acts">
+    <div class="act">
+       <h2>Crew</h2>
+    </div>
+    <div class="actors">
+      <div class="actor">
+        <img src="{%static 'images/actors/mari.jpg' %}" alt="">
+        <h3>Mari Selvaraj</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/rahman.jpg' %}" alt="">
+        <h3>A.R.Rahman</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/udhaya.jpg' %}" alt="">
+        <h3>Udhayanidhi Stalin</h3>
+      </div>
+      <div class="actor">
+        <img src="{%static 'images/actors/sandy.jpg' %}" alt="">
+        <h3>Sandy Master</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'inc/footer2.html' %}
+
+    
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>

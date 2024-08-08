@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGBI |  home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="{%static 'images/Tamil/logo.png' %}">
+</head>
+
+   
+<body>
+  {% include 'inc/maduraiheader.html' %}
+<div class="main">
+  <div class="container1">
+    <div class="row1">
+      <h1 class="movies">TAMIL MOVIES</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href="/maduraimaamannan"><img src="{% static 'images/Tamil/mama.jpg' %}" alt=""></a>
+      <a href="/maduraimaamannan">MAAMANNAN</a> 
+    </div>
+    <div class="content1">
+      <a href="/maduraiaram"><img src="{% static 'images/tamil/aram.jpg' %}" alt=""></a>
+      <a href="/maduariaram">ARAMM</a>
+    </div>
+    <div class="content1">
+      <a href="/maduraileo"><img src="{% static 'images/Tamil/leo.jpg' %}" alt=""></a>
+      <a href="/maduraileo">LEO</a>
+    </div>
+    <div class="content1">
+      <a href="/maduraimanadu"><img src="{% static 'images/Tamil/man.jpg' %}" alt=""></a>
+      <a href="/maduraimanadu">MAANAADU</a>
+    </div>
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">OTHER LANGUAGE MOVIES</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/malayalam/kaduva.jpg' %}" alt=""></a>
+      <a href="">KADUVA</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/malayalam/june.jpg' %}" alt=""></a>
+      <a href="">JUNE</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/kanada/bhahubali 2.jpg' %}" alt=""></a>
+      <a href="">BAHUBALI-2</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/kanada/vikramrona.jpg' %}" alt=""></a>
+      <a href="">VIKRANT RONA</a>
+    </div>
+   </div>
+   <div class="container1">
+    
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/hindi/war.jpg' %}" alt=""></a>
+      <a href="">WAR</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/telugu/rrudrangi.jpg' %}" alt=""></a>
+      <a href="">RUDRANGI</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/english/tho.jpg' %}" alt=""></a>
+      <a href="">THOR</a>
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/english/avatar.jpg' %}" alt=""></a>
+      <a href="">AVATAR</a>
+    </div>
+   </div>
+   <div class="container1">
+    <div class="row1">
+      <h1 class="movies">CARTOON MOVIES</h1>
+    </div>
+    <div class="contents1">
+    <div class="content1">
+      <a href=""><img src="{% static 'images/anime/crood.jpg' %}" alt=""></a>
+      <a href="">THE CROODS</a> 
+    </div>
+    <div class="content1">
+      <a href=""><img src="{% static 'images/anime/zzootopia.jpg' %}" alt=""></a>
+      <a href="">ZOOTOPIA</a>
+    </div>
+    <div class="content1">
+        <a href=""><img src="{% static 'images/kanada/adipurush.jpg' %}" alt=""></a>
+        <a href="">ADIPURUSH</a>
+      </div>
+      
+   </div>
+  </div>
+</div>
+{% include 'inc/footer.html' %}
+<script src="{% static 'js/main.js' %}"></script>
+  
+
+</body>
+</html>
